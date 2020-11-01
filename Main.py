@@ -31,8 +31,7 @@ while x:
                     await text_channel.send(embed=myEmbed)
                     
     except:
-        print("error")
-        x = False
+        pass
        
 
     
