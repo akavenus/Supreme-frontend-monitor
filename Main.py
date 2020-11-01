@@ -18,9 +18,6 @@ while x:
             print("in stock")
             price_x = soup.find('p', class_='price').text
             name_x = soup.find('h2', class_='protect').text
-            image_tags = soup.findAll('img')
-            for image_tag in image_tags:
-                print(image_tag.get('src'))
             x = False
             xa = "Send"
             @client.event
