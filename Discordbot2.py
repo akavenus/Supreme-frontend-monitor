@@ -32,4 +32,4 @@ while x:
 
         
     
-client.run('NzY3NTEwOTQ2MjU1NDcwNjQ0.X4y-RQ.qVwcQ-GLIHqQSCcgInpxpnT_0qg')
+client.run('enter your token here')
