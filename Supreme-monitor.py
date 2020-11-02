@@ -14,7 +14,6 @@ while x:
         if soup.find('input',{'class':'button'}):
             response = requests.get(url).text
             soup = BeautifulSoup(response, 'lxml') 
-            price = soup.find()
             print("in stock")
             price_x = soup.find('p', class_='price').text
             name_x = soup.find('h2', class_='protect').text
