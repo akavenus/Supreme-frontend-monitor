@@ -1,3 +1,4 @@
-pip install discord
+pip install dhooks
 pip install requests
 pip install BeautifulSoup4
+pip install fake_headers
