@@ -2,11 +2,13 @@ import requests
 from bs4 import BeautifulSoup
 from dhooks import Webhook, Embed
 import time
+import lxml
 from fake_headers import Headers
-headers = Headers(os="mac", headers=True).generate() #os is the operating system you want the header to be
-url = 'https://www.supremenewyork.com/shop/accessories/g7u54g3ja/bxd1pzhyu'
+s = requests.Session()
+headers = Headers(os="mac", headers=True).generate()
+url = 'https://www.supremenewyork.com/shop/accessories/vqfyz36pa/swqgeku2i'
 Delay = 5 #Delay between each requests that you send to monitor the site
-response = requests.get(url, headers=headers).text
+response = s.get(url, headers=headers).text
 soup = BeautifulSoup(response, 'lxml') 
 x = True
 while x:
@@ -37,7 +39,3 @@ while x:
         print("error finding product or out of stock")
         time.sleep(Delay)
         x = False
-       
-
-
-    
