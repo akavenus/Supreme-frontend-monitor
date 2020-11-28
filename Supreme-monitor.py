@@ -7,7 +7,7 @@ from fake_headers import Headers
 s = requests.Session()
 headers = Headers(os="mac", headers=True).generate()
 url = 'https://www.supremenewyork.com/shop/accessories/r0iouzbyr/fe5v4y8nj'
-webhook = 'https://discord.com/api/webhooks/781205103192309769/3Ccdy9zja4G9ke6eB6XYmLntrsViqhbxkCibrJfjyVItr5qlRVXYC0OAcMras7EOH4EH'
+webhook = your webhook
 Delay = 5 #Delay between each requests that you send to monitor the site
 response = s.get(url, headers=headers).text
 soup = BeautifulSoup(response, 'lxml') 
